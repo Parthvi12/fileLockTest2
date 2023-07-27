@@ -28,6 +28,18 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Send Messages_GetMarketingList",
+              "name": "GetMarketingList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "(List1.pageNo-1)*List1.pageSize"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Send Messages_NumberOfCustomers",
               "name": "NumberOfCustomers",
               "confirmBeforeExecute": false,
@@ -41,18 +53,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Send Messages_GetMarketingList",
-              "name": "GetMarketingList",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "(List1.pageNo-1)*List1.pageSize"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]
